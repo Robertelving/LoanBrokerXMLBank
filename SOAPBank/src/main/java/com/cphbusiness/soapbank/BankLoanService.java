@@ -20,7 +20,7 @@ public class BankLoanService {
      * Web service operation
      */
     @WebMethod(operationName = "getInterestRate")
-    public int getInterestRate(@WebParam(name = "ssn") String ssn, @WebParam(name = "creditscore") int creditscore, @WebParam(name = "amount") double amount, @WebParam(name = "duration") int duration) {
-        return (int)(Math.random()*20);
+    public double getInterestRate(@WebParam(name = "ssn") String ssn, @WebParam(name = "creditscore") int creditscore, @WebParam(name = "amount") double amount, @WebParam(name = "duration") int duration) {
+        return Math.random()*20;
     }
 }
